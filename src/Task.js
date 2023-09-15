@@ -21,7 +21,7 @@ const Task = () => {
       if (apiCalls < 15 && intervalTime <= 120) {
         fetchRandomQuote();
         setApiCalls(apiCalls + 1);
-
+console.log(intervalTime,apiCalls)
         if (apiCalls === 4) {
           // After every 5 API calls, double the interval time
           setIntervalTime(intervalTime * 2);
